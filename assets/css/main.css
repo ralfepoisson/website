@@ -1,0 +1,24 @@
+/*
+Ralfe Poisson .com
+------------------------
+
+@author Ralfe Poisson <ralfepoisson@gmail.com>
+@version 0.1
+@copyright Copyright (c) Ralfe Poisson 2013
+
+*/
+
+.profile_pic {
+	float: right;
+	width: 150px;
+	margin-left: 30px;
+}
+
+.contact_me_icons tr td {
+	padding: 5px;
+}
+
+.contact_me_icons tr td img {
+	width: 44px;
+}
+
