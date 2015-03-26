@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Portfolio of Ralfe Poisson</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+        <!-- Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="css/nivo-lightbox.css" rel="stylesheet" />
+        <link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+        <link href="css/animate.css" rel="stylesheet" />
+
+        <!-- Squad theme CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="color/default.css" rel="stylesheet">
+
+        <!-- Script -->
+        <script>
+            function load_modal(url) {
+                // Construct the URL
+                url = "work/" + url;
+                console.log("Fetching: " + url);
+
+                // Get HTML
+                $.get(url, function(data, status) {
+                    // Load the retrieved HTML into the modal
+                    console.log(" - Retrieved: ", data);
+                    $("#portfolio_item").html(data);
+
+                    // Display the Modal
+                    $("#workModal").modal("show");
+                });
+            }
+        </script>
+
+    </head>
+
+    <body data-spy="scroll">
+
+    <div class="container">
+                <ul id="gn-menu" class="gn-menu-main">
+                    <li class="gn-trigger">
+                        <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+                        <nav class="gn-menu-wrapper">
+                            <div class="gn-scroller">
+                                <ul class="gn-menu">
+                                    <li><a href="#about" class="gn-icon gn-icon-download">About</a></li>
+                                    <li><a href="#service" class="gn-icon gn-icon-cog">Service</a></li>
+                                    <li><a href="#works" class="gn-icon gn-icon-help">Works</a></li>
+                                    <li><a href="#contact" class="gn-icon gn-icon-archive">Contact</a></li>
+                                </ul>
+                            </div><!-- /gn-scroller -->
+                        </nav>
+                    </li>
+                    <li><a href="index.html">Ralfe Poisson</a></li>
+                    <li>
+                        <ul class="company-social">
+                            <li class="social-facebook"><a href="https://www.facebook.com/ralfe" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="social-twitter"><a href="https://www.twitter.com/ralfe" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="social-dribble"><a href="https://za.linkedin.com/in/ralfe" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="social-google"><a href="https://plus.google.com/+RalfePoisson" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+
+        <!-- Section: intro -->
+        <section id="intro" class="intro">
+            <div class="slogan">
+                <h1>Ralfe Poisson</h1>
+                <p>Specialist Software Engineer, Musician and Life-long Student</p>
+                <a href="#works" class="btn btn-skin scroll">Portfolio</a>
+            </div>
+        </section>
+        <!-- /Section: intro -->
+
+        <!-- Section: about -->
+        <section id="about" class="home-section text-center bg-gray">
+            <div class="heading-about marginbot-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="team boxed-grey">
+                                <div class="inner">
+                                    <div class="avatar">
+                                        <img src="img/ralfe.jpg">
+                                    </div>
+                                    <h5>Ralfe Poisson</h5>
+                                    <p class="subtitle"><a href="mailto:ralfepoisson@gmail.com"><strong>ralfepoisson</strong> (at) gmail (dot) com</dot></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="section-heading">
+                                <h2>About me</h2>
+                            </div>
+
+                            <p>
+                                I grew up in Durban, South Africa, and started playing around with Turbo
+                                Pascal 7 and VB6 when I was 12. From there, I started working as a junior
+                                programmer for a large textile manufacturer in my school holidays. After
+                                school I studied Comp Sci and IT, and was a guest lecturer at a few
+                                Durban-based universities, giving lectures to undergraduates and MBA students
+                                on a variety of topics from Open Source Web Development to Strategic Corporate
+                                Security. I have bee involved in a number of other software-related start-ups, and
+                                run the local chapter of <a href="http://www.isgafrica.org" target="_blank">ISG</a>.
+                            </p>
+                            <p>
+                                Apart from IT, I also have qualifications in Psychology, and currently am
+                                conducting research on the Deaf Community in South Africa. I was involved in
+                                a pilot project for psychosocial interventions with Deaf children sponsored by Sinomlando.
+                                I am fluent in South African Sign Language and engage in volunteer work as a Sign Language
+                                interpreter.
+                            </p>
+                            <p>
+                                I also play a number of instruments orchestraly: Piano, Violin, Cello. I am currently
+                                a member of the Durban <a target="_blank" href="http://www.durbancityorchestra.co.za">City Orchestra</a>, playing first violin.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Section: about -->
+
+
+        <!-- Section: services -->
+        <section id="service" class="home-section text-center">
+
+            <div class="heading-about marginbot-50">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+
+                        <div class="section-heading">
+                        <h2>Our Services</h2>
+                        <p>Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has</p>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-3">
+
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fa fa-code fa-3x"></i>
+                        </div>
+                        <div class="service-desc">
+                            <h5>Print</h5>
+                            <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-3 col-md-3">
+
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fa fa-suitcase fa-3x"></i>
+                        </div>
+                        <div class="service-desc">
+                            <h5>Web Design</h5>
+                            <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-3 col-md-3">
+
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fa fa-cog fa-3x"></i>
+                        </div>
+                        <div class="service-desc">
+                            <h5>Photography</h5>
+                            <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-3 col-md-3">
+
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fa fa-rocket fa-3x"></i>
+                        </div>
+                        <div class="service-desc">
+                            <h5>Cloud System</h5>
+                            <p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- /Section: services -->
+
+
+        <!-- Section: works -->
+        <section id="works" class="home-section text-center bg-gray">
+            <div class="heading-works marginbot-50">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+
+                        <div class="section-heading">
+                            <h2>Recent Work</h2>
+                            <p>
+                                One of the things I really love about software development is that I am always being exposed to
+                                new and interesting industries, technologies, and companies. I've worked on projects spanning industries
+                                from Aviation to Automotive, from Recruitment to Retail. Here are some examples of my work...
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-sm-12 col-md-12 col-lg-12" >
+                    <div class="row gallery-item">
+                        <div class="row">
+                            <!-- SPAR ME -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/sparme.png" class="img-responsive" alt="img">
+                                    <img src="img/works/sparcrm.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+
+                            <!-- Altech Node -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('ami_node.html');" title="SPAR Rewards">
+                                    <img src="img/works/node1.png" class="img-responsive" alt="img">
+                                    <img src="img/works/node2.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+
+                            <!-- tinyMVC -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('tinmvc.html');" title="SPAR Rewards">
+                                    <img src="img/works/tinyMVC%20Logo.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+
+                            <!-- Stylez -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/stylez.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- VoiceStack -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/voicestack.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+
+                            <!-- WorldChat -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/worldchat.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+
+                            <!-- ARIS -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/aris.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+
+                            <!-- Nivea Kiosk -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/nivea.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Baobab -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/baobab.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+
+                            <!-- Cannon -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/cannon.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+
+                            <!-- Deloitte -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/deloitte.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+
+                            <!-- EagleView -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/eagleview.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- H&A -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/ha.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+
+                            <!-- Mabco -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/mabco.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+
+                            <!-- RecruitPilot -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/recruitpilot.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+
+                            <!-- SAHealth -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/sahealth.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Seagull -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/seagull.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+
+                            <!-- SEDA -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/seda.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+
+                            <!-- SOE -->
+                            <div class="col-md-3">
+                                <a href="javascript:void(0);" onclick="load_modal('spar_rewards.html');" title="SPAR Rewards">
+                                    <img src="img/works/soe.png" class="img-responsive" alt="img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Section: works -->
+
+        <!-- Section: contact -->
+        <section id="contact" class="home-section text-center">
+            <div class="heading-contact marginbot-50">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+
+                        <div class="section-heading">
+                        <h2>Get in touch</h2>
+                        <p>
+                            If you'd like to contact me, fill out the contact form below, or catch me on one of the social media
+                            channels at the top of the page.
+                        </p>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8 col-md-offset-2">
+                <div class="boxed-grey">
+                    <form id="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    Email Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                    </span>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject"> Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Something Fascinating" required="required" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Message</label>
+                                <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                    placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
+                                Send Message</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+
+                <div class="widget-contact row">
+                     <div class="col-lg-6">
+                    <address>
+                      <strong>Ralfe Poisson</strong><br>
+                      <a target="_blank" href="http://www.ralfepoisson.com">ralfepoisson.com</a><br>
+                      <a target="_blank" href="http://blog.ralfepoisson.com">blog.ralfepoisson.com</a><br>
+                      <abbr title="Telephone">T:</abbr> +27 (0)82 494-3133
+                    </address>
+                    </div>
+
+                    <div class="col-lg-6">
+                    <address>
+                      <strong>Email</strong><br>
+                       <a href="mailto:ralfepoisson@gmail.com">ralfepoisson@gmail.com</a>
+                    </address>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+            </div>
+        </section>
+        <!-- /Section: contact -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+
+                        <p>Copyright &copy; 2014 Ninestars - by <a href="http://bootstraptaste.com">Bootstraptaste</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Core JavaScript Files -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="js/gnmenu.js"></script>
+        <script src="js/jquery.scrollTo.js"></script>
+        <script src="js/stellar.js"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="js/custom.js"></script>
+
+        <!-- Modal -->
+        <div class="modal fade" id="workModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="portfolio_item"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+    </body>
+
+</html>
