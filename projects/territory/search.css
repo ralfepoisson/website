@@ -1,0 +1,14 @@
+.page-title {
+	padding-left: 20px; 
+	padding-bottom: 10px; 
+	background-color: #EEE; 
+	margin-bottom: 20px;
+}
+
+.page-content {
+	margin-left: 10px;
+}
+
+.search-form {
+	border-right: 1px solid #DDD;
+}
