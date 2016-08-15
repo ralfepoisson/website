@@ -1,0 +1,148 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+.text-muted {
+	margin: 0 0 0 0;
+}
+
+.contact-btn {
+	width: 32%;
+}
+
+.contact-btn i.fa {
+	margin-right: 5px;
+}
+
+.card {
+	border: 1px solid #DDD;
+	background-color: white;
+	box-shadow: 1px 1px 5px grey;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.card-img {
+	margin-bottom: 10px;
+}
+
+.card-img img {
+	max-height: 160px;
+	max-width: 260px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  padding-bottom: 20px;
+  border-top: 1px #BBB solid;
+  border-bottom: 1px #BBB solid;
+}
+.jumbotron .btn {
+  padding: 14px 10px;
+  font-size: 21px;
+}
+
+.jumbotron img {
+	max-height: 200px;
+	float: left;
+}
+
+.jumbotron h1 {
+	font-size: 48px;
+}
+
+.jumbotron .lead {
+	margin-top: 20px;
+	border-top: 1px solid #EFEFEF;
+	margin-bottom: 0px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.contact {
+	background-color: #E5E5E5;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top: 1px #BBB solid;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  .title {
+	  width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .profile-pic {
+	  width: 100%;
+  }
+  .profile-pic img {
+	  float:none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+	.contact-btn {
+		width:100%;
+		float: left;
+	}
+}
