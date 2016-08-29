@@ -16,14 +16,44 @@
 			<div class="col-md-4 search-form">
 				<h2>Search</h2>
 				
-				<label>Location</label>
-				<input type="text" class="form-control" id="location">
-				<br>
+				<!-- Location -->
+				<div class="form-group">
+					<label>Location</label>
+					<input type="text" class="form-control" id="location">
+				</div>
 				
-				<label>Names</label>
-				<textarea id="names" class="form-control" rows="8"></textarea>
-				<br>
+				<!-- List Type -->
+				<div class="form-group">
+					<label class="radio-inline">
+						<input type="radio" name="list_type" id="predefinedList" value="predefined" checked onclick="change_list_type('predefined')"> Predefined List
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="list_type" id="customList" value="custom" onclick="change_list_type('custom')"> Custom List
+					</label>
+				</div>
 				
+				<!-- Custom List -->
+				<div class="form-group" id="custom_list_area" style="display:none;">
+					<label>Names</label>
+					<textarea id="names" class="form-control" rows="8"></textarea>
+				</div>
+				
+				<!-- Predefined List -->
+				<div class="form-group" id="predefined_list_area">
+					<label>Predefined List of Names</label>
+					<select class="form-control" id="list">
+						<option value=0>Please select one</option>
+						<option value="britain">British</option>
+						<option value="ghana">Ghanian</option>
+						<option value="nigeria">Nigerian</option>
+						<option value="senegal">Senegalese</option>
+						<option value="india">Indian</option>
+						<option value="philipeans">Filipino</option>
+						<option value="china">Chinese</option>
+					</select>
+				</div>
+				
+				<!-- Submit Button -->
 				<span class="btn btn-success" onclick="search()">Search</span>
 			</div>
 			<div class="col-md-8">
@@ -49,6 +79,9 @@
 						<br><br>
 						<h3 align="center" id="searching_name"></h3>
 					</div>
+					<div class="modal-footer">
+						<span class="btn btn-danger" onclick="cancel_search();"><i class="glyphicon glyphicon-remove"></i> Cancel</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -57,5 +90,6 @@
 		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="search.js"></script>
+		<script src="lists.js"></script>
 	</body>
 </html>
